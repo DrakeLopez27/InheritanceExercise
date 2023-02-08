@@ -6,6 +6,41 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
+            Bird Hawk= new Bird();
+            Hawk.age = 2;
+            Hawk.isAlive= true;
+            Hawk.wingColor = "Brown";
+            Hawk.BeakLength = 1.75;
+
+
+
+
+            Reptile Snake = new Reptile()
+            {
+                isAmphibious = true,
+                hasLegs = false,
+                NumberOfTeeth = 0,
+                LegCount = 0,
+            };
+
+            var myAnimals = new Animal[] { Snake, Hawk };
+
+            foreach (var a in myAnimals)
+            {
+                Console.WriteLine($"NUMBER OF LEGS: {a.LegCount}");
+                Console.WriteLine($"LIFE STATUS: {a.isAlive}");
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             // TODO Be sure to follow best practice when creating your classes
 
             // Create a class Animal
